@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 
-namespace Tao.Infrastructure
+namespace Tao.Application
 {
-    public class Class1
+    public class CoreProfiles:Profile
     {
+        public CoreProfiles()
+        {
+
+
+        }
     }
 }

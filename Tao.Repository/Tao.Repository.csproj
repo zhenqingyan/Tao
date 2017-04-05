@@ -34,6 +34,10 @@
       <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +54,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Tao.Infrastructure.csproj">
+      <Project>{e1ae7484-bd5f-4e93-bdee-eb8defcf16ca}</Project>
+      <Name>Tao.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tao.Domain\Tao.Domain.csproj">
+      <Project>{6aadf7c2-18d8-4142-a920-a83ab356d8ab}</Project>
+      <Name>Tao.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tao.IRepository\Tao.IRepository.csproj">
+      <Project>{3b3263ed-59ba-48c5-9bb0-aaecf3dbb31a}</Project>
+      <Name>Tao.IRepository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

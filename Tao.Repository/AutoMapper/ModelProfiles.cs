@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 
 namespace Tao.Repository
 {
-    public static class DapperExtensions
+    public class ModelProfiles : Profile
     {
+        public ModelProfiles()
+        {
 
+        }
     }
 }

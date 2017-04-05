@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dapper;
-using System.Data;
-using System.Data.SqlClient;
+using Tao.Domain;
 
-namespace Tao.Repository
+namespace Tao.IRepository.IRepository
 {
-    public class BaseRepository
+    public interface IProductRepo: IBaseRepository<Product>
     {
 
     }

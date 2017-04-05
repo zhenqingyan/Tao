@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tao.Application
+namespace Tao.Domain
 {
-    public class Class1
+    public interface IAggregateRoot
     {
+
     }
 }
