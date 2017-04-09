@@ -1,0 +1,24 @@
+﻿@section styles{
+    <style>
+        .order-body {
+            width:900px;
+            margin:0 auto;
+            background-color:rgba(255, 255, 255,0.7)
+
+        }
+    </style>
+}
+<div class="order-body">
+    <i-Form ref="formValidate" model="formValidate" rules="ruleValidate" label-width="80">
+        <Form-item label="姓名" prop="name">
+            <i-Input placeholder="请输入姓名"></i-Input>
+        </Form-item>
+        <Form-item>
+            <i-Button type="primary">提交订单</i-Button>
+            <i-Button type="ghost" style="margin-left: 8px">重置</i-Button>
+        </Form-item>
+    </i-Form>
+</div>
+@section scripts{
+    <script src="~/Scripts/Biz/order.js"></script>
+}
